@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 17:52:03 by xjose             #+#    #+#             */
-/*   Updated: 2024/06/19 15:12:05 by xjose            ###   ########.fr       */
+/*   Updated: 2024/06/19 19:08:48 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr(char *s);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
+void				ft_clear(void);
 # pragma endregion
 
 # pragma region string
