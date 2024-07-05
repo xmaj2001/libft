@@ -6,7 +6,7 @@
 #    By: xjose <xjose@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/08 19:07:10 by jwon              #+#    #+#              #
-#    Updated: 2024/06/18 20:34:44 by xjose            ###   ########.fr        #
+#    Updated: 2024/07/05 15:54:48 by xjose            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,17 +26,6 @@ all: $(NAME)
 $(NAME):
 	gcc $(FLAGS) -c $(IS)*.c $(MEM)*.c $(PRINT)*.c $(PRINTF)*.c $(STRING)*.c $(CONVERT)*.c -I ./
 	ar rc $(NAME) *.o
-
-run: 
-	gcc $(FLAGS) -c $(IS)*.c $(MEM)*.c $(PRINT)*.c $(PRINTF)*.c $(STRING)*.c $(CONVERT)*.c main.c -I ./
-	gcc *.o -o app
-	rm -f *.o
-
-run-f: 
-	gcc -c $(IS)*.c $(MEM)*.c $(PRINT)*.c $(PRINTF)*.c $(STRING)*.c $(CONVERT)*.c main.c -I ./
-	gcc *.o -o app
-	rm -f *.o
-
 clean:
 	rm -f *.o
 

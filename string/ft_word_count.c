@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_word_count.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 09:48:52 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/05 16:17:09 by xjose            ###   ########.fr       */
+/*   Created: 2024/07/05 15:15:21 by xjose             #+#    #+#             */
+/*   Updated: 2024/07/05 15:17:04 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
-
-char	*ft_strchr(const char *s, int c)
+int	ft_word_count(const char *s)
 {
-	while (*s != '\0')
+	int	len;
+	int	i;
+
+	i = 0;
+	len = 0;
+	while (s[i])
 	{
-		if (*s == (char)c)
-			return ((char *)s);
-		s++;
+		while (s[i] == ' ' || s[i] == '\t')
+			i++;
+		if (s[i] != '\0')
+			len++;
+		while (s[i] && s[i] != ' ' && s[i] != '\t')
+			i++;
 	}
-	if (c == 0)
-		return ((char *)s);
-	return (0);
+	return (len);
 }

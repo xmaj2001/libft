@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/07 20:03:01 by hbaddrul          #+#    #+#             */
-/*   Updated: 2024/05/20 16:50:47 by xjose            ###   ########.fr       */
+/*   Created: 2024/07/05 15:06:19 by xjose             #+#    #+#             */
+/*   Updated: 2024/07/05 15:06:24 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 static int	ft_intlen(int n)
 {
