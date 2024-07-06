@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 15:10:25 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/05 16:17:06 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/06 18:02:02 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	**ft_split(const char *s, char c)
 	int		p;
 	int		start;
 
-	result = (char **)malloc(sizeof(char *) * ft_word_count(s) + 1);
+	result = (char **)malloc(sizeof(char *) * ft_word_count(s, c) + 1);
 	if (result == NULL)
 		return (NULL);
 	i = 0;
