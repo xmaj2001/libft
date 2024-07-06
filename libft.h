@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 17:52:03 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/05 16:25:17 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/06 17:57:02 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void				ft_putendl_fd(char *s, int fd);
 void				ft_clear(void);
 
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
-int					ft_word_count(const char *s);
+int					ft_word_count(const char *s, char d);
 
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);

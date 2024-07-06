@@ -6,11 +6,11 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 15:15:21 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/05 15:17:04 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/06 17:56:36 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_word_count(const char *s)
+int	ft_word_count(const char *s, char d)
 {
 	int	len;
 	int	i;
@@ -19,11 +19,11 @@ int	ft_word_count(const char *s)
 	len = 0;
 	while (s[i])
 	{
-		while (s[i] == ' ' || s[i] == '\t')
+		while (s[i] == d)
 			i++;
 		if (s[i] != '\0')
 			len++;
-		while (s[i] && s[i] != ' ' && s[i] != '\t')
+		while (s[i] && s[i] != d)
 			i++;
 	}
 	return (len);
