@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 16:28:41 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/06 18:05:16 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/07 07:53:06 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	main(int argc, char *argv[])
 {
 	char	**result;
 
-	result = ft_split(argv[1], '|');
+	result = ft_split(argv[1], '\n');
 	while (*result)
 	{
 		printf("%s\n", *result);
