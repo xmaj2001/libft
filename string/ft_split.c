@@ -6,7 +6,7 @@
 /*   By: xjose <xjose@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 15:10:25 by xjose             #+#    #+#             */
-/*   Updated: 2024/07/09 14:32:27 by xjose            ###   ########.fr       */
+/*   Updated: 2024/07/09 14:43:11 by xjose            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ char	**ft_split(const char *s, char c)
 	{
 		if (*s != c)
 		{
+			len = 0;
 			while (*s && *s != c && ++len)
 				s++;
 			result[p++] = ft_substr(s - len, 0, len);
