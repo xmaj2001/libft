@@ -6,7 +6,7 @@
 #    By: xjose <xjose@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/08 19:07:10 by jwon              #+#    #+#              #
-#    Updated: 2024/07/05 15:54:48 by xjose            ###   ########.fr        #
+#    Updated: 2024/07/09 14:09:17 by xjose            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,3 +33,6 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+rec: fclean all
+	rm -f *.o
