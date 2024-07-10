@@ -19,7 +19,7 @@ int	main(int argc, char *argv[])
 	result = ft_split(argv[1], '\n');
 	while (*result)
 	{
-		printf("%s\n", *result);
+		printf("%s42\n", *result);
 		result++;
 	}
 	return (0);
